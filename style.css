@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.major {
+  width: 100%;
+  margin: auto;
+}
+
+.navbar {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+}
+ul {
+  flex: 1;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 25px;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(11, 6, 78);
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.banner {
+  display: flex;
+  margin-top: 20px;
+  background-image: url(assets/banner.jpg);
+  background-size: 100%;
+  height: 650px;
+}
+
+.left-column,
+.right-column {
+  flex-basis: 50%;
+  margin-left: 100px;
+}
+
+.left-column h1 {
+  font-size: 100px;
+  margin: 30px auto;
+}
+
+.left-column h3 {
+  font-size: 25px;
+}
+.right-column img {
+  width: 100%;
+}
