@@ -116,6 +116,7 @@
    
 
   //  change category font color when hover
+  //https://www.w3schools.com/jquery/event_mouseleave.asp
           $('.category1, .category2, .category3, .category4, .category5').mouseover(function(){
             $(this).css('color', '#ff0000');
           }).mouseleave(function(){
@@ -124,6 +125,7 @@
 
 
 // navigate to a certain section when clicking a certain catgeory 
+//https://www.w3schools.com/jquery/css_scrolltop.asp
           $('.category1').click(function(){
             $(document).scrollTop(0) // any value you need
           });
