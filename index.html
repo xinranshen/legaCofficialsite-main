@@ -2,13 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>MegaConnected</title>
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="card.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,153 +30,140 @@
   </head>
 
   <body>
-<!-- test
-  <div id ="test", style ="width: 300px; height: 100px; background-color:aqua">
-  
-    
-  </div> -->
+    <div class="navbar">
+      <ul>
+        <li>
+          <a class="category1" href="#">Home</a>
+          <a class="category2" href="#">iMegacy</a>
+          <a class="category3" href="#">Product</a>
+          <a class="category4" href="donate.html">Donate</a>
+          <a class="category5" href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
 
+    <div class="main">
+      <section>
+        <div class="major">
+          <div class="main" id="imegacy">
+            <div class="right-column"></div>
+            <div class="right-column">
+              <h1>MegaC</h1>
+              <h4 style="margin-bottom: 80px">
+                A government-funded project aiming at making BCI wearables
+                accessible to everyone. We are here to help you keep the best
+                memories alive!
+              </h4>
 
-
-
-
-    <!-- navbar -->
-    <div class="major">
-      <div class="navbar">
-        <ul>
-          <li>
-            <a class ="category1" href="#">Home</a>
-            <a  class ="category2" href="#">iMegacy</a>
-            <a  class ="category3" href="#">Product</a>
-            <a  class ="category4" href="donate.html">Donate</a>
-            <a  class ="category5" href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="main" id="imegacy">
-        <div class="right-column"></div>
-        <div class="right-column">
-          
-          <h1>MegaC</h1>
-          <h4 style="margin-bottom: 80px">
-            A government-funded project aiming at making BCI wearables
-            accessible to everyone. We are here to help you keep the best
-            memories alive!
-            </h4>
-
-            <div id="repobtn">
-              <button>Create a Memrepo</button>
-
+              <div id="repobtn">
+                <button><a href="create.html">Create a Memrepo</a></button>
+              </div>
             </div>
+          </div>
         </div>
-      </div> 
-
-      
-   
-      
-
-      <div class="main" id="product">
-        
-        <div class="left-column">
-          <h1>iMem Products</h1>
+      </section>
+      <section>
+        <div class="container reveal">
+          <h2>iMem Products</h2>
           <h4>
-            Choose the non-invasive wearable that works best for you among our
-            curated list of reliable patreons. Use you medical/student insurance
-            for waivers!
-            <br>
-            I will put Hi-Fi digital /physical Prototypes here
+            Basically, they can read your brain signals and export your memories
+            into .mem files! All three products are available in local
+            pharmacies.
           </h4>
+          <div class="cards">
+            <div class="text-card">
+              <h3>Liquid iMem</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="text-card">
+              <h3>iMem pens</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="text-card">
+              <h3>headband</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-
-
-      <div class="main" id="manifesto">
-        <div class="left-column">
-          <h1>A Megacy Manifesto</h1>
-          <h4>
-            You care about data privacy, emotional bonds, and your new identity
-            constructed in the digital world. So do us. Here is our initiative.
-          </h4>
+      </section>
+      <section>
+        <div class="container reveal">
+          <h2>A Megacy Manifesto</h2>
+          <div class="cards">
+            <div class="text-card">
+              <h3>A Text Message</h3>
+              <div id="manifestotext">
+                We have absolute control over our memories and thoughts.
+                <br />
+                Our body is the only medium that can control our identity.We
+                accept the fact that humans cannot live forever.
+                <br />
+                We record our memories so that we can learn to say goodbye
+                better.
+                <br />
+                We record memories, not to make us not cherish the present, to
+                treat memories that can be viewed at any time as a placebo and
+                to rely too much on them.
+                <br />
+                Memory is a precious heritage of mankind. Only by remembering
+                our past can we have a bright future.
+              </div>
+            </div>
+            <div class="text-card">
+              <h3>A hologram message</h3>
+              <p>Featuring MegaC staff members and some of our users</p>
+            </div>
+          </div>
         </div>
-      </div>
-<!-- 
-      <div class="main" id="ourstory">
-        <div class="left-column">
-        
-            
-           <h4>You care about data privacy, emotional bonds, and your new identity constructed in the digital world. So do us. 
-            <br>
-            Here is our <button><a href="manifesto.html">manifesto</a></button>.</h4> 
-
-          </h4>
-        </div>
-      </div> -->
-      
-
-      <div class="main" id="contactus">
-        <div class="right-column"></div>
-        <div class="right-column">
-          <h1>Join our mission!</h1>
-          <h4>you can submit a form about whether you want to donate a piece of memory to the public collective human memory repo</h4>
-        </div>
-      </div>
+      </section>
     </div>
-      <div class="main" id="faq">
-        <div class="left-column">
-          <h1>You might wanna ask...</h1>
-          <h4>Don't worry! Pop-up AR tutorials with each question answered.</h4>
-          <br>
-          <h4>(instead of showing the AR tutorials if you click this page there's gonna be an alert saying that your device doesn't support this 2050s technology.)</h4>
-        </div>
-      </div>
-    </div>
-  
+
     <!-- script -->
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 
     <script>
-   
+      //  change category font color when hover
+      //https://www.w3schools.com/jquery/event_mouseleave.asp
+      $(".category1, .category2, .category3, .category4, .category5")
+        .mouseover(function () {
+          $(this).css("color", "#ff0000");
+        })
+        .mouseleave(function () {
+          $(this).css("color", "#000");
 
-  //  change category font color when hover
-  //https://www.w3schools.com/jquery/event_mouseleave.asp
-          $('.category1, .category2, .category3, .category4, .category5').mouseover(function(){
-            $(this).css('color', '#ff0000');
-          }).mouseleave(function(){
-            $(this).css('color', '#000');
-
-
-
-// navigate to a certain section when clicking a certain catgeory 
-//https://www.w3schools.com/jquery/css_scrolltop.asp
-          $('.category1').click(function(){
-            $(document).scrollTop(0) // any value you need
+          // navigate to a certain section when clicking a certain catgeory
+          //https://www.w3schools.com/jquery/css_scrolltop.asp
+          $(".category1").click(function () {
+            $(document).scrollTop(0); // any value you need
           });
 
-            $('.category2').click(function(){
-            $(document).scrollTop(750) // any value you need
+          $(".category2").click(function () {
+            $(document).scrollTop(750); // any value you need
           });
 
-          $('.category3').click(function(){
-            $(document).scrollTop(1500) // any value you need
+          $(".category3").click(function () {
+            $(document).scrollTop(1500); // any value you need
           });
 
-          $('.category4').click(function(){
-            $(document).scrollTop(2300) // any value you need
+          $(".category4").click(function () {
+            $(document).scrollTop(2300); // any value you need
           });
 
-          $('.category5').click(function(){
-            $(document).scrollTop(2700) // any value you need
+          $(".category5").click(function () {
+            $(document).scrollTop(2700); // any value you need
           });
-
-         
-
-         
-
-});
-
+        });
     </script>
   </body>
 </html>

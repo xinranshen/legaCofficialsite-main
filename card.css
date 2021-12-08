@@ -1,25 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
   font-family: "Jura", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+body {
+  background: #ffffff;
 }
-
-.major {
-  width: 100%;
-  margin: auto;
-}
-
-.container {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
 .navbar {
   display: flex;
   align-items: center;
@@ -27,7 +17,6 @@ html {
   background-color: rgb(255, 255, 255);
   position: sticky;
   top: 0;
-  z-index: 100;
 }
 ul {
   flex: 1;
@@ -46,12 +35,19 @@ ul li a {
   padding: 0 10px;
   font-size: 20px;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 60px;
+}
 
 .main {
   height: 100vh;
   scroll-snap-align: start;
+  z-index: 1;
 }
-#ourstory {
+/* #ourstory {
   display: flex;
   margin-top: 0px;
   background-image: url(assets/ball.png);
@@ -70,7 +66,7 @@ ul li a {
   background-image: url(assets/ball.png);
   background-size: 100%;
   height: 750px;
-}
+} */
 #imegacy {
   display: flex;
   background-image: url(assets/repohifi.png);
@@ -78,7 +74,7 @@ ul li a {
   height: 750px;
 }
 
-#faq {
+/* #faq {
   display: flex;
   background-color: rgb(255, 255, 255);
   background-size: 100%;
@@ -89,7 +85,7 @@ ul li a {
   background-color: rgb(11, 6, 78);
   background-size: 100%;
   height: 100%;
-}
+} */
 
 .left-column,
 .right-column {
@@ -150,7 +146,7 @@ ul li a {
 #repobtn:hover {
   transform: translate(0, -9px);
   /* box-shadow: 10px -10px 10px 0 rgb(141, 152, 141),
-    -10px 10px 10px 0 rgb(154, 139, 200); */
+      -10px 10px 10px 0 rgb(154, 139, 200); */
 
   border-radius: 30px;
   transition: transform 0.4s ease;
@@ -163,4 +159,93 @@ ul li a {
 
 #manifestotext {
   font-size: 18px;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+}
+section:nth-child(1) {
+  color: #fff;
+}
+
+section:nth-child(2) {
+  color: #1d212b;
+  background: #fff;
+}
+
+section:nth-child(3) {
+  color: #fff;
+  background-color: rgb(188, 181, 148);
+  /* background-image: url(assets/iMem.png); */
+}
+
+section:nth-child(4) {
+  color: #1d212b;
+
+  background-image: url(assets/ball.png);
+}
+
+section .container {
+  margin: 100px;
+}
+
+section h1 {
+  font-size: 60px;
+}
+
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section .cards {
+  display: flex;
+}
+
+section .cards .text-card {
+  background: #ccd5dc;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+section .cards .text-card h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* on a phone screen the cards would display in columns */
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 40px;
+  }
+
+  section .cards {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
