@@ -11,11 +11,6 @@
 // })
 
 
-window.addEventListener('scroll', reveal);
-
-function reveal(){
- var reveals = document.querySelectorAll('.reveal');
-
  for(var i = 0; i < reveals.length; i++){
 
    var windowheight = window.innerHeight;
