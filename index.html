@@ -9,6 +9,25 @@
     <title>MegaConnected</title>
 
     <!-- stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +39,12 @@
       href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
     />
     <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Jura:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="card.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,141 +54,335 @@
     />
   </head>
 
-  <body>
-    <div class="navbar">
+  <body onLoad="typewriter();">
+    <div id="navbar">
       <ul>
         <li>
-          <a class="category1" href="#">Home</a>
-          <a class="category2" href="#">iMegacy</a>
-          <a class="category3" href="#">Product</a>
+          <a class="category1" href="#" data-page="Home">Home</a>
+          <a class="category2" href="#" data-page="Product">Product</a>
+          <a class="category3" href="#" data-page="Manifesto">Manifesto</a>
           <a class="category4" href="donate.html">Donate</a>
-          <a class="category5" href="#">FAQ</a>
+          <!-- <a class="category5" href="#">FAQ</a> -->
         </li>
       </ul>
     </div>
 
     <div class="main">
-      <section>
+      <section id="Home">
         <div class="major">
           <div class="main" id="imegacy">
-            <div class="right-column"></div>
+            <div class="right-column reveal">
+              <img class="repoimg" src="assets/repoo.png" /
+              style="transform:scale(2.5); margin-left: 200px; margin-top:
+              50px">
+            </div>
             <div class="right-column">
-              <h1>MegaC</h1>
-              <h4 style="margin-bottom: 80px">
-                A government-funded project aiming at making BCI wearables
-                accessible to everyone. We are here to help you keep the best
-                memories alive!
-              </h4>
+              <div class="typewriter">
+                <h1 id="title">MEGAC</h1>
+                <h4 style="margin-bottom: 80px; margin-top: 50px">
+                  Your trust-worthy manual for exporting and protecting memory
+                  legacies. We are here to help you relive the best moments!
+                </h4>
+                <!-- <button class="repobtn">
+                  <a href="create.html">Explore</a>
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Product">
+        <div class="container reveal">
+          <h2>Steps You Need to Export a Memory</h2>
+          <!-- <h4 style="float:left; width: 300px;height: 200px; justify-content: right;">
+            Our sponsor products redefine BCI wearables by pushing the limits.
+            All three options available in local stores.
+          </h4> -->
+          <div class="cards">
+            <div class="text-card" style="background-color: transparent; color:white">
+              <img src="assets/model.png" />
+              <h3 >Connect</h3>
+              <p>
+                Your implanter will ask you to continue or not once it detects
+                human skin. After confirming, all you need to do is... scroll it
+                on your forehead evenly!
+              </p>
+            </div>
 
-              <div id="repobtn">
-                <button><a href="create.html">Create a Memrepo</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container reveal">
-          <h2>iMem Products</h2>
-          <h4>
-            Basically, they can read your brain signals and export your memories
-            into .mem files! All three products are available in local
-            pharmacies.
-          </h4>
-          <div class="cards">
-            <div class="text-card">
-              <h3>Liquid iMem</h3>
+            <div class="text-card" style="background-color: transparent; color: white">
+              <img src="assets/hologram.png" />
+              <h3>Save</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                After you recount the memory, please remember to save the .mem
+                file generated!
               </p>
             </div>
-            <div class="text-card">
-              <h3>iMem pens</h3>
+            <div class="text-card" style="background-color: transparent; color: white">
+              <img src="assets/complete.png" style="transform: scale(1)" />
+              <h3>Upload</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div class="text-card">
-              <h3>headband</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                You're all set! Now this memory can be uploaded in your
+                personalized memory repository in the cloud.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section>
+      <section id="two">
         <div class="container reveal">
-          <h2>A Megacy Manifesto</h2>
+          <h2>Cutting-Edge Memory Export Technology</h2>
+          <!-- <h4 style="float:left; width: 300px;height: 200px; justify-content: right;">
+            Our sponsor products redefine BCI wearables by pushing the limits.
+            All three options available in local stores.
+          </h4> -->
           <div class="cards">
             <div class="text-card">
-              <h3>A Text Message</h3>
-              <div id="manifestotext">
-                We have absolute control over our memories and thoughts.
-                <br />
-                Our body is the only medium that can control our identity.We
-                accept the fact that humans cannot live forever.
-                <br />
-                We record our memories so that we can learn to say goodbye
-                better.
-                <br />
-                We record memories, not to make us not cherish the present, to
-                treat memories that can be viewed at any time as a placebo and
-                to rely too much on them.
-                <br />
-                Memory is a precious heritage of mankind. Only by remembering
-                our past can we have a bright future.
-              </div>
+              <img src="assets/model.png" />
+              <h3>iMem Implanter</h3>
+              <p>
+                With conductible ink and mini electrophysicalsensors, the newest
+                liquid iMem works exactly like a face cream.
+              </p>
             </div>
             <div class="text-card">
+              <img src="assets/repo.png" style="transform: scale(2)" />
+              <h3>Memory Repository</h3>
+              <p>
+                A cloud drive for storing all your memories that are exported in
+                .mem files .
+              </p>
+            </div>
+            <div class="text-card">
+              <!-- <img src="assets/Hero-hottoddy_.jpeg" /> -->
+              <h3>Data Privacy</h3>
+              <p>
+                Your memory repository is well-protected by blockchain
+                technology. You have absolute control over your own data. Feel
+                free to grant access to your family and friends!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="three">
+        <div class="inspect reveal">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="carousel-caption d-none d-md-block"
+                  "
+                >
+                  <h5>As easy as a lint roller!</h5>
+                  <p>
+                    Scroll it at your forehead, and the conductible ink is drawn
+                    on your skin (Our conductible ink used is transparent, odorless, washable
+                    and allergy-proof. And it visualizes your brain activities
+                    accurately!). Your connected mobile device would detect the
+                    circuit and invite you for further interactions.
+                  </p>
+                </div>
+                <img
+                  class="d-block w-100"
+                  src="assets/produ.png"
+                  style="transform: scale(0.4)"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>You can even stick it to the wall!</h5>
+                  <p>
+                    With the smart magnet at the bottom, the iMem implanter can
+                    be easily sticked at any surface. 
+                  </p>
+                </div>
+                <img
+                  class="d-block w-100"
+                  src="assets/wall.png"
+                  style="transform: scale(0.8)"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pick your coolest implanter!</h5>
+                  <p>
+                    And yes, there are color choices.
+                  </p>
+                </div>
+                <img
+                  class="d-block w-100"
+                  src="assets/color.png" style="transform: scale(0.7)""
+
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
+
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/woman.jpeg" style="width:100%; transform: scale(2.5);">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/woman.jpeg" style="width:100%;transform: scale(2.4)">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/woman.jpeg" style="width:100%;transform: scale(2.4)">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </section> -->
+
+      <section id="Manifesto">
+        <div class="container reveal">
+          <h2 style="color: white">A Megacy Manifesto</h2>
+          <div class="cards">
+            <div class="manifesto-card">
+              <div class="typed-out">
+                <div id="manifestotext">
+                  We have absolute control over our memories and thoughts.
+                  <br />
+                  <br />
+                  Our body is the only medium that can control our identity. We
+                  accept the fact that humans cannot live forever.
+                  <br />
+                  <br />
+                  We record our memories so that we can learn to say goodbye
+                  better.
+                  <br />
+                  <br />
+                  We record memories, not to make us not cherish the present, to
+                  treat memories that can be viewed at any time as a placebo and
+                  to rely too much on them.
+                  <br />
+                  <br />
+                  Memory is a precious heritage of mankind. Only by remembering
+                  our past can we have a bright future.
+                  <br>
+                  <article onclick="btnalert()">
+                    <a href="#">View hologram message</a>
+                  </article>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- <div class="text-card">
               <h3>A hologram message</h3>
               <p>Featuring MegaC staff members and some of our users</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
+
+      <!-- <div class="ball"></div> -->
     </div>
 
     <!-- script -->
     <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   
+      <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
 
-    <script>
-      //  change category font color when hover
-      //https://www.w3schools.com/jquery/event_mouseleave.asp
-      $(".category1, .category2, .category3, .category4, .category5")
-        .mouseover(function () {
-          $(this).css("color", "#ff0000");
-        })
-        .mouseleave(function () {
-          $(this).css("color", "#000");
-
-          // navigate to a certain section when clicking a certain catgeory
-          //https://www.w3schools.com/jquery/css_scrolltop.asp
-          $(".category1").click(function () {
-            $(document).scrollTop(0); // any value you need
-          });
-
-          $(".category2").click(function () {
-            $(document).scrollTop(750); // any value you need
-          });
-
-          $(".category3").click(function () {
-            $(document).scrollTop(1500); // any value you need
-          });
-
-          $(".category4").click(function () {
-            $(document).scrollTop(2300); // any value you need
-          });
-
-          $(".category5").click(function () {
-            $(document).scrollTop(2700); // any value you need
-          });
+      <!-- <script>
+        $(function() {
+            var target = $('#three');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
         });
-    </script>
+        </script> -->
+        <script>
+           $("a").click(function(){
+    var pageId = $(this).attr("data-page");
+    $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);
+  });
+        </script>
   </body>
 </html>

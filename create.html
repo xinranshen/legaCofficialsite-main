@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="create.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,20 +27,30 @@
   </head>
 
   <body>
-    <div class="navbar">
+    <div id="navbar">
       <ul>
         <li>
           <a class="category1" href="index.html">Home</a>
-          <a class="category2" href="#">iMegacy</a>
-          <a class="category3" href="#">Product</a>
+          <a class="category2" href="#">Product</a>
+          <a class="category3" href="#">Manifesto</a>
           <a class="category4" href="donate.html">Donate</a>
-          <a class="category5" href="#">FAQ</a>
+          <!-- <a class="category5" href="#">FAQ</a> -->
         </li>
       </ul>
     </div>
-    <div class="image">
-      <img src="assets/repo.png" />
-      <img src="assets/bear.png" />
+    <div class="flex-container reveal">
+      <div class="flex-item">
+        item1
+
+        <img src="assets/woman.jpeg" />
+      </div>
+      <div class="flex-item">
+        item2
+
+        <!-- <img src="assets/repo.png" />
+        <img src="assets/bear.png" /> -->
+      </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>MegaConnected</title>
 
@@ -11,7 +26,34 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="donate.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,36 +63,84 @@
   </head>
 
   <body>
-    <!-- navbar -->
-    <div class="major">
-      <div class="navbar">
-        <ul>
-          <li>
-            <a class ="category1" href="index.html">Home</a>
-            <a  class ="category2" href="#">Product</a>
-            <a  class ="category3" href="#">iMegacy</a>
-            <a  class ="category4" href="#">Donate</a>
-            <a  class ="category5" href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-
-    <div id="manifestotext">
-        <h4>
-      Please enter your memrepo ID number
-      <br>
-      Please enter the keywords of the memory you want to share with us.
-      <br>
-       Do you agree to add this memory to our Human Collective Memory Public Welfare Program? You will get a faster memory upload experience as a reward
-       <br>
-       Your contribution will help us to better record the history of mankind to our descendants and even the inhabitants of more distant galaxies.
-       <br>
-       Your donation will be automatically uploaded to our public repo after you die, unless you demand to upload it earlier. Your personal information will be kept confidential.
-       <br>
-       If submitting this memory makes you uncomfortable, please do not submit
-       <br>Do you agree to the following terms
-        </h4>
-      
+    <div id="navbar">
+      <ul>
+        <li>
+          <a class="category1" href="index.html">Home</a>
+          <a class="category2" href="#">Product</a>
+          <a class="category3" href="#">Manifesto</a>
+          <a class="category4" href="donate.html">Donate</a>
+          <!-- <a class="category5" href="#">FAQ</a> -->
+        </li>
+      </ul>
     </div>
+    <section>
+      <form style="padding: 50px">
+        <div id="manifestotext">
+          Hi! Thank you for considering the memory donation.
+          <br />
+          Do you agree to add this memory to our Human Collective Memory Public
+          Welfare Program? You will get a faster memory upload experience as a
+          reward
+          <br />
+          Your contribution will help us to better record the history of mankind
+          to our descendants and even the inhabitants of more distant galaxies.
+          <br />
+          Your donation will be automatically uploaded to our public repo after
+          you die, unless you demand to upload it earlier. Your personal
+          information will be kept confidential.
+          <br />
+          If submitting this memory makes you uncomfortable, please do not
+          submit
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" style="font-size: 20px; color: white"
+            >Please enter your memrepo ID number</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter ID"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your memrepo ID with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label
+            for="exampleInputPassword1"
+            style="font-size: 20px; color: white"
+            >Please enter the keywords of the memory you want to share with
+            us.</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="eg: Christmas 2021, walking a dog, central park"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+    <!-- navbar -->
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 </html>
