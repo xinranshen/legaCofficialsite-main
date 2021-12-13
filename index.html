@@ -165,6 +165,9 @@
         </div>
       </section>
 
+
+
+      <!--carousel learnt in  https://getbootstrap.com/docs/4.0/components/carousel/ -->
       <section id="three">
         <div class="inspect reveal">
           <div
@@ -379,6 +382,7 @@
         });
         </script> -->
         <script>
+          // scrolltop learned in https://stackoverflow.com/questions/40788489/navigation-bar-scroll-when-clicked
            $("a").click(function(){
     var pageId = $(this).attr("data-page");
     $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);

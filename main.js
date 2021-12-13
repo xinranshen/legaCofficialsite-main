@@ -9,6 +9,8 @@
     
 
 // })
+
+// reveal elements on scroll: https://morioh.com/p/3810e5b07682
 window.addEventListener('scroll', reveal);
 function reveal(){
   var reveals = document.querySelectorAll('.reveal');
